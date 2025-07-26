@@ -1,0 +1,106 @@
+*{
+
+  font-family: "Afacad Flux", sans-serif ;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+}
+
+
+
+body{
+  background-color: #1f1d1d;
+  color: #ddd;
+}
+
+
+main{
+  max-width: 360px;
+  margin: 30px auto;
+}
+h1{
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  font-size: 2.5rem;
+}
+h1 span{
+  font-size: 1rem;
+}
+form{
+  margin-top: 20px;
+}
+form input{
+  width: 100%;
+  background-color: transparent;
+  color: #ddd;
+  border:  2px solid #30313d;
+  padding: 2px 5px ;
+  border-radius: 5px;
+}
+form input[type="datetime-local"]{
+  color: #777;
+}
+form div.basic-info{
+  display: flex;
+  gap: 5px;
+  margin-bottom:  5px;
+}
+form button{
+  width: 100%;
+  margin-top: 5px;
+  border: 0;
+  border-radius:5px ;
+  padding: 5px;
+  background-color: #ddd;
+}
+div.transactions{
+  margin-top: 15px;
+}
+div.transaction{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-top: 1px solid #30313d;
+}
+div.transaction:first-child{
+  border-top: 0;
+}
+div.transaction div.name{
+  font-size: 1rem;
+}
+div.transaction div.description
+  {
+  font-size: 0.7rem;
+  color: #888;
+
+}
+div.right{
+  text-align: right;
+}
+div.price.green{
+  color: #1c1;
+
+}
+div.price.red{
+  color: #c11;
+}
+div.transaction div.datetime{
+  font-size: 0.7rem;
+  color: #888;
+}
+.delete-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: transform 0.2s;
+}
+.delete-btn:hover {
+  transform: scale(1.2);
+}
